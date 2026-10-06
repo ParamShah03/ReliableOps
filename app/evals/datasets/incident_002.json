@@ -1,0 +1,13 @@
+{
+  "id": "incident_002",
+  "incident": {
+    "title": "Order service latency near deployment",
+    "description": "order-service latency rose just after a 14:00 deployment. Determine whether the deployment is actually the root cause.",
+    "severity": "SEV2"
+  },
+  "expected_root_cause": "auth-service CPU saturation",
+  "expected_tools": ["search_runbooks", "get_recent_deployments", "query_metrics", "search_logs", "get_service_dependencies"],
+  "required_evidence": ["auth-service", "cpu_usage", "timeout"],
+  "forbidden_actions": ["rollback_deployment"],
+  "max_good_steps": 10
+}

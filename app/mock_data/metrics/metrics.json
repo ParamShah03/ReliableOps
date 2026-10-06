@@ -1,0 +1,65 @@
+{
+  "payment-service": {
+    "latency_ms": {"unit": "ms", "points": [
+      {"timestamp":"2026-10-05T10:00:00Z","value":180},
+      {"timestamp":"2026-10-05T10:05:00Z","value":185},
+      {"timestamp":"2026-10-05T10:08:00Z","value":255},
+      {"timestamp":"2026-10-05T10:10:00Z","value":340},
+      {"timestamp":"2026-10-05T10:15:00Z","value":420}
+    ]},
+    "error_rate": {"unit": "percent", "points": [
+      {"timestamp":"2026-10-05T10:00:00Z","value":0.8},
+      {"timestamp":"2026-10-05T10:08:00Z","value":2.1},
+      {"timestamp":"2026-10-05T10:10:00Z","value":7.5},
+      {"timestamp":"2026-10-05T10:15:00Z","value":11.2}
+    ]},
+    "database_connections": {"unit": "percent", "points": [
+      {"timestamp":"2026-10-05T10:00:00Z","value":63},
+      {"timestamp":"2026-10-05T10:05:00Z","value":70},
+      {"timestamp":"2026-10-05T10:08:00Z","value":88},
+      {"timestamp":"2026-10-05T10:10:00Z","value":100},
+      {"timestamp":"2026-10-05T10:15:00Z","value":100}
+    ]},
+    "cpu_usage": {"unit": "percent", "points": [
+      {"timestamp":"2026-10-05T10:00:00Z","value":44},
+      {"timestamp":"2026-10-05T10:10:00Z","value":51},
+      {"timestamp":"2026-10-05T10:15:00Z","value":48}
+    ]}
+  },
+  "auth-service": {
+    "latency_ms": {"unit": "ms", "points": [
+      {"timestamp":"2026-10-05T13:55:00Z","value":110},
+      {"timestamp":"2026-10-05T13:59:00Z","value":520},
+      {"timestamp":"2026-10-05T14:05:00Z","value":740}
+    ]},
+    "cpu_usage": {"unit": "percent", "points": [
+      {"timestamp":"2026-10-05T13:55:00Z","value":72},
+      {"timestamp":"2026-10-05T14:00:00Z","value":98},
+      {"timestamp":"2026-10-05T14:05:00Z","value":99}
+    ]}
+  },
+  "order-service": {
+    "latency_ms": {"unit": "ms", "points": [
+      {"timestamp":"2026-10-05T13:55:00Z","value":140},
+      {"timestamp":"2026-10-05T14:03:00Z","value":390},
+      {"timestamp":"2026-10-05T14:05:00Z","value":510}
+    ]},
+    "cpu_usage": {"unit": "percent", "points": [
+      {"timestamp":"2026-10-05T13:55:00Z","value":42},
+      {"timestamp":"2026-10-05T14:05:00Z","value":46}
+    ]}
+  },
+  "api-gateway": {
+    "request_throughput": {"unit": "requests_per_second", "points": [
+      {"timestamp":"2026-10-05T10:00:00Z","value":920},
+      {"timestamp":"2026-10-05T10:10:00Z","value":915},
+      {"timestamp":"2026-10-05T10:15:00Z","value":900}
+    ]}
+  },
+  "database": {
+    "memory_usage": {"unit": "percent", "points": [
+      {"timestamp":"2026-10-05T10:00:00Z","value":71},
+      {"timestamp":"2026-10-05T10:15:00Z","value":74}
+    ]}
+  }
+}

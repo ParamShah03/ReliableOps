@@ -1,0 +1,19 @@
+{
+  "payment-service": [
+    {"timestamp":"2026-10-05T10:07:00Z","level":"INFO","message":"payment request completed in 182ms"},
+    {"timestamp":"2026-10-05T10:09:00Z","level":"WARN","message":"database pool utilization above 90 percent"},
+    {"timestamp":"2026-10-05T10:10:00Z","level":"ERROR","message":"timeout waiting for database connection from pool"},
+    {"timestamp":"2026-10-05T10:11:00Z","level":"ERROR","message":"checkout failed: database connection acquisition timeout"}
+  ],
+  "order-service": [
+    {"timestamp":"2026-10-05T14:03:00Z","level":"WARN","message":"downstream auth-service request timeout"},
+    {"timestamp":"2026-10-05T14:04:00Z","level":"WARN","message":"auth-service dependency exceeded 500ms timeout"}
+  ],
+  "auth-service": [
+    {"timestamp":"2026-10-05T13:59:00Z","level":"WARN","message":"CPU saturation detected on auth worker pool"},
+    {"timestamp":"2026-10-05T14:01:00Z","level":"ERROR","message":"token verification queue backlog increasing"}
+  ],
+  "api-gateway": [
+    {"timestamp":"2026-10-05T10:11:00Z","level":"WARN","message":"payment-service upstream timeout"}
+  ]
+}

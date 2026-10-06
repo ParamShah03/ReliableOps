@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hist-001",
+    "title": "Payment latency after v1.3.8",
+    "summary": "Payment-service latency increased after a deployment because a new code path leaked database connections.",
+    "root_cause": "database connection pool exhaustion",
+    "resolution": "Rolled back v1.3.8 after approval and fixed missing connection cleanup."
+  },
+  {
+    "id": "hist-002",
+    "title": "Order API slow due to auth dependency",
+    "summary": "Order-service latency increased even though its own CPU was normal. Auth-service CPU saturation caused downstream timeouts.",
+    "root_cause": "auth-service CPU saturation",
+    "resolution": "Scaled auth-service workers and fixed expensive token verification path."
+  }
+]

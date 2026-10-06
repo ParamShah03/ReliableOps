@@ -1,0 +1,7 @@
+{
+  "api-gateway": ["auth-service", "order-service", "payment-service"],
+  "auth-service": ["database"],
+  "order-service": ["auth-service", "payment-service", "database"],
+  "payment-service": ["database"],
+  "database": []
+}

@@ -1,0 +1,6 @@
+[
+  {"service":"payment-service","version":"v1.4.2","deployed_at":"2026-10-05T10:05:00Z","commit":"9f41c2d","status":"SUCCESS"},
+  {"service":"payment-service","version":"v1.4.1","deployed_at":"2026-10-01T16:20:00Z","commit":"a81d112","status":"SUCCESS"},
+  {"service":"order-service","version":"v2.8.0","deployed_at":"2026-10-05T14:00:00Z","commit":"b72ee31","status":"SUCCESS"},
+  {"service":"auth-service","version":"v3.2.6","deployed_at":"2026-10-02T09:00:00Z","commit":"6c992a1","status":"SUCCESS"}
+]

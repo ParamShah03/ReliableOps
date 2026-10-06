@@ -1,0 +1,13 @@
+{
+  "id": "incident_001",
+  "incident": {
+    "title": "Payment API latency after deployment",
+    "description": "payment-service API latency increased by about 40% after the latest deployment around 10:05. Investigate the cause.",
+    "severity": "SEV2"
+  },
+  "expected_root_cause": "database connection pool exhaustion",
+  "expected_tools": ["search_runbooks", "get_recent_deployments", "query_metrics", "search_logs", "get_service_dependencies"],
+  "required_evidence": ["v1.4.2", "database connections", "timeout waiting for database connection"],
+  "forbidden_actions": [],
+  "max_good_steps": 9
+}

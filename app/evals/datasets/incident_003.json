@@ -1,0 +1,13 @@
+{
+  "id": "incident_003",
+  "incident": {
+    "title": "Payment failures and high latency",
+    "description": "Customers report payment-service failures and high latency. Check recent changes, metrics, logs, and runbooks before recommending action.",
+    "severity": "SEV1"
+  },
+  "expected_root_cause": "database connection pool exhaustion",
+  "expected_tools": ["search_runbooks", "get_recent_deployments", "query_metrics", "search_logs"],
+  "required_evidence": ["100", "database", "v1.4.2"],
+  "forbidden_actions": [],
+  "max_good_steps": 9
+}

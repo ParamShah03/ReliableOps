@@ -1,0 +1,39 @@
+from enum import StrEnum
+
+
+class IncidentStatus(StrEnum):
+    OPEN = "OPEN"
+    INVESTIGATING = "INVESTIGATING"
+    RESOLVED = "RESOLVED"
+    CLOSED = "CLOSED"
+
+
+class RunStatus(StrEnum):
+    PENDING = "PENDING"
+    QUEUED = "QUEUED"
+    RUNNING = "RUNNING"
+    WAITING_FOR_APPROVAL = "WAITING_FOR_APPROVAL"
+    COMPLETED = "COMPLETED"
+    FAILED = "FAILED"
+    MAX_STEPS_EXCEEDED = "MAX_STEPS_EXCEEDED"
+
+
+class StepStatus(StrEnum):
+    PENDING = "PENDING"
+    RUNNING = "RUNNING"
+    COMPLETED = "COMPLETED"
+    FAILED = "FAILED"
+    WAITING_FOR_APPROVAL = "WAITING_FOR_APPROVAL"
+    REJECTED = "REJECTED"
+
+
+class ApprovalStatus(StrEnum):
+    PENDING = "PENDING"
+    APPROVED = "APPROVED"
+    REJECTED = "REJECTED"
+
+
+class RiskLevel(StrEnum):
+    READ_ONLY = "READ_ONLY"
+    SAFE_WRITE = "SAFE_WRITE"
+    REQUIRES_APPROVAL = "REQUIRES_APPROVAL"
